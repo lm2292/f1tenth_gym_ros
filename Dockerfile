@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-FROM osrf/ros:foxy-desktop
+FROM osrf/ros:foxy-desktop-full
 
 SHELL ["/bin/bash", "-c"]
 
