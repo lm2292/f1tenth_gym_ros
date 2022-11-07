@@ -156,14 +156,14 @@ def generate_launch_description():
     ld.add_action(bridge_node)
     ld.add_action(nav_lifecycle_node)
     ld.add_action(map_server_node)
-    #ld.add_action(ego_robot_publisher)
+    ld.add_action(ego_robot_publisher)
    # ld.add_action(ign_bridge)
 
     #ld.add_action(camera_bridge)
 
     # ld.add_action(scan_subscriber)
     # ld.add_action(drive_service)
-    # ld.add_action(forward_vel_publisher)
+    #ld.add_action(forward_vel_publisher)
     if has_opp:
         ld.add_action(opp_robot_publisher)
 

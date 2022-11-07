@@ -12,7 +12,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
+        (os.path.join('share', package_name, 'launch'), glob('launch/*')),
         (os.path.join('share', package_name, 'config'), glob('config/*')),
     ],
     install_requires=['setuptools'],
@@ -27,9 +27,9 @@ setup(
 
             'gym_bridge = f1tenth_gym_ros.gym_bridge:main',
 
-            'scan_subscriber = f1tenth_gym_ros.scan_subscriber:main'
-            'drive_service_client = f1tenth_gym_ros.drive_service_client:main',
-            'drive_service_server = f1tenth_gym_ros.drive_service_server:main'
+#            'scan_subscriber = f1tenth_gym_ros.scan_subscriber:main'
+#            'drive_service_client = f1tenth_gym_ros.drive_service_client:main',
+#            'drive_service_server = f1tenth_gym_ros.drive_service_server:main'
             'forward_publisher = f1tenth_gym_ros.forward_publisher:main'
         ],
     },
