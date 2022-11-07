@@ -65,7 +65,7 @@ $ docker exec -it f1tenth_gym_ros-sim-1 /bin/bash
 ```bash
 $ source /opt/ros/foxy/setup.bash
 $ source install/local_setup.bash
-$ ros2 launch f1tenth_gym_ros gym_bridge_launch.py
+$ ros2 launch f1tenth_gym_ros gym_bridge.launch.py
 ```
 A rviz window should pop up showing the simulation either on your host system or in the browser window depending on the display forwarding you chose.
 
